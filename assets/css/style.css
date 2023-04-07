@@ -1,0 +1,184 @@
+/* Importing Font Style from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rubik:wght@400;500;600;700&family=Shadows+Into+Light&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #F9F6F0;
+}
+
+/* Custom Scroll Bar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #F9F6F0;
+}
+::-webkit-scrollbar-thumb {
+    background: #FF9D2E;
+}
+
+/* Promo CSS */
+.promo-container {
+    margin: 32px 128px;
+    max-height: 75vh;
+    overflow-x: auto;
+}
+.promo-container::-webkit-scrollbar {
+    height: 8px;
+}
+.promo-container::-webkit-scrollbar-track {
+    background: #F9F6F0;
+}
+.promo-container::-webkit-scrollbar-thumb {
+    background: #FF9D2E;
+    border-radius: 8px;
+}
+.promo-ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: 10px;
+    text-align: center;
+}
+.promo-card {
+    width: 275px;
+    height: 500px;
+    padding-top: 8px;
+    color: black;
+    position: relative;
+    background: none;
+    transition: color 0.4s;
+}
+.promo-card:hover > * , .promo-card:hover .promo-svg path {
+    color: white;
+    fill: white;
+}
+.promo-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 25%;
+    background: #FF9D2E;
+    z-index: -1;
+    transition: 0.4s;
+    border-radius: 0 0;
+}
+.promo-card:hover::before {
+    height: 100%;
+}
+.promo-svg {
+    margin-top: 8px;
+}
+.h3-card-title{
+    font-size: 25px;
+}
+.card-text {
+    padding: 8px;
+    color: #666;
+}
+.promo-img {
+    margin-top: 10px;
+}
+
+/* About CSS */
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 32px;
+    margin: 32px 32px;
+    gap: 40px;
+    max-height: 75vh;
+}
+.about-banner {
+    position: relative;
+    margin-left: 120px;
+}
+.about-img1 {
+    width: 100%;
+    height: auto;
+    max-width: max-content;
+}
+.about-img2 {
+    position: absolute;
+    left: 40px;
+    top: -10px;
+    animation: scaleUp 1s linear infinite alternate;
+}
+@keyframes scaleUp {
+    0% { transform: scale(1);}
+    100% { transform: scale(1.05); }
+}
+.about-content {
+    width: 450px;
+    height: 450px;
+    margin-right: 120px;
+}
+.h2-about-title {
+    font-size: 40px;
+    margin: 0;
+}
+.span {
+    color: #FF9D2E;
+}
+.section-text {
+    line-height: 1.6rem;
+    padding: 8px;
+    font-size: 16px;
+    color: #666;
+    padding-right: 20px;
+}
+.about-ul {
+    list-style-type: none;
+    padding-left: 8px;
+}
+.about-text{
+    margin-left: 4px;
+    line-height: 2.2rem;
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+}
+.btn-order-now {
+    background: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    margin: 10px;
+    color: #F9F6F0;
+    transition: color 0.8s;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #FF9D2E;
+}
+.btn-order-now:hover {
+    color: #FF9D2E;
+}
+.btn-order-now::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 200%;
+    background: #FF9D2E;
+    z-index: -1;
+    transition: 0.8s;
+    border-radius: 0 0 50% 50%;
+}
+.btn-order-now:hover::before {
+    height: 0%;
+}
+
+@media screen and (max-width: 876px) {
+    .about-container {
+        display: block;
+    }
+}
