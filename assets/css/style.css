@@ -14,10 +14,11 @@ body {
     width: 8px;
 }
 ::-webkit-scrollbar-track {
-    background: #F9F6F0;
+    background-color: #F9F6F0;
 }
 ::-webkit-scrollbar-thumb {
-    background: #FF9D2E;
+    background-color: #FF9D2E;
+    border-radius: 4rem;
 }
 
 /* Header CSS */
