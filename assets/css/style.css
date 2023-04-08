@@ -22,127 +22,7 @@ body {
 }
 
 /* Header CSS */
-.main{
-    width: 100%;
-    background-image: url(/assets/images/main_bg.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-}
-.navbar{
-    /* border: 2px solid red; */
-    width: 100%; /* 1200px*/
-    height: 80px;
-    margin: auto;
-    position: fixed;
-    top: 0;
-    background: transparent;
-}
-.title-bar {
-    /* border: 2px solid red; */
-    margin: 5px 0;
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-}
-.title-bar a {
-    /* border: 2px solid red; */
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-.title-bar a:hover {
-    color: coral;
-}
-    /* 
-header.navbar ul li a.banner {
-    color: black;
-    background-color: white;
-    width: 100%;
-} */
-.icon{
-    padding-top: 16px;
-    width: 225px;
-    height: 125px;
-}
-.icon img{
-    width: 260px;
-    height: 150px;
-    /* color: #000; */
 
-}
-.logo{
-    width: 300px;
-    color : yellow;
-    font-size: 45px;
-    font-family: Arial;
-    padding-left: 10px;
-    float: left;
-    padding-top: 10px;
-    margin-left: 100px;
-}
-.title-bar{
-    width: 600px;  
-    float: right; 
-    height: 70px;
-    margin-right: 100px;
-    /* background-color: cornsilk; */
-}
-
-ul{
-    float: right; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-ul li{
-    float: left;
-    list-style-type: none;
-    margin-left: 60px;
-    margin-top: 30px;
-    font-size: 15px;
-    color: blue;
-}
-ul li a{
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-family: Arial;
-    color: coral;
-    font-size: 15px;
- 
-}
-ul li a:hover{
-    color: coral;
-}
-
-.para{
-    /* color: rgb(22, 226, 56); */
-    /* border: 2px solid red; */
-    text-align: center;
-    justify-content: center;
-    padding-top: 30vh;
-}
-.para h3,pre{
-    color: rgb(22, 226, 56);
-    line-height: 16px;
-    font-size: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.para h1{
-    color: red;
-    line-height: 10px;
-    text-transform: uppercase;
-    font-size: 50px;
-    font-family: Roboto, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 /* Promo CSS */
 .promo-container {
@@ -237,7 +117,8 @@ ul li a:hover{
     padding: 32px 32px;
     margin: 32px 32px;
     gap: 40px;
-    max-height: 75vh;
+    height: 500px;
+    /* max-height: calc(500px + 80px); */
 }
 .about-banner {
     position: relative;
@@ -323,83 +204,89 @@ ul li a:hover{
 @media screen and (max-width: 876px) {
     .about-container {
         display: block;
+        height: 875px;
+        margin: 8px 8px;
+        padding: 8px 16px;
+    }
+    .section-text {
+        line-height: 1.4rem;
+    }
+    .about-text {
+        line-height: 1.8rem;
     }
 }
 
 /* Menu Items */
+.menu-header {
+    padding-top: 50px;
+    width: 100%;
+    height: 150px;
+}
 .subhead{
     text-align: center;
     color: red;
-    position: relative;
+    font-size: 20px;
+    margin: 4px;
+    padding: 0;
 }
 .Heading{
     text-align: center;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
 }
 .Discription{
     text-align: center;
     color: rgb(78, 78, 78);
 }
-
-.mainopt{
-    margin: 0;
-  /* position: absolute; */
-  top: 26%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  margin-left: 29%; 
-}
-
-.opt{
-    background-color: rgb(255, 255, 255);
-    padding: 10px;
-    width: 100px;
-    box-shadow: 5px 5px 15px grey;
-    border-radius: 10px;
-    color:#000000;
-    position: static;
-    margin: 20px;
-    text-align:center;
-    border: 0;
-}
-
-.opt:hover{
-    background-color: rgb(255, 196, 0);
-    cursor: pointer;
-    padding: 13px;
-}
-
 .threeitems{
     display: flex;
-    margin-top: -2%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 150px;
 }
-
 .btn{   
-    margin-top: 10px;
-    /* display: inline-block; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 40px;
     font-size: 19px;
     color:#000000;
     border-radius: 10px;
     cursor: pointer;
-    padding:10px 15px;
-    box-shadow: 5px 5px 15px grey;
+    box-shadow: 1px 1px 4px grey;
     border: 0;
-    
 }
 .dishpic{
-    height: 190px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    height: 200px;
 }
-
+.price-tag {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
 .Items{
-    margin: 10%;
+    width: 250px;
+    height: 350px;
 }
-
 .btn:hover{
     background-color:rgb(255, 196, 0); 
+    box-shadow: 1px 1px 4px black;
 }
-
-
 .Dish{
+    text-align: center;
     font-weight: bolder;
+}
+@media screen and (max-width: 768px) { 
+    .threeitems {
+        display: block;
+    }
 }
 
 /* Review paga code */
