@@ -1,5 +1,10 @@
 /* Importing Font Style from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rubik:wght@400;500;600;700&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     padding: 0;
@@ -7,6 +12,7 @@ body {
     box-sizing: border-box;
     font-family: Roboto, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: white;
+    min-height: 100vh;
 }
 
 /* Custom Scroll Bar */
@@ -22,7 +28,78 @@ body {
 }
 
 /* Header CSS */
-
+.header-img {
+    height: 100vh;
+    background-image: url(/assets/images/main_bg.jpg);
+    background-size: cover;
+    position: relative;
+}
+.header-main {
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 10000;
+}
+.nav-main {
+    backdrop-filter: blur(2px);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    color: white;
+    border: transparent;
+    border-block-end: 1px solid hsla(23, 61%, 86%, 0.2);
+    transition: 0.6s;
+}
+.main-title a{
+    position: relative;
+    text-decoration: none;
+    font-size: 25px;
+    color: #FF9D2E;
+    cursor: pointer;
+}
+.nav-ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    list-style-type: none;
+}
+.nav-ul li a {
+    font-family: Roboto, sans-serif;
+    text-transform: capitalize;
+    font-weight: 575;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+.nav-ul li a:hover {
+    color: #FF9D2E;
+    cursor: pointer;
+}
+.active {
+    background-color: white;
+    box-shadow: 2px 0px 2px rgb(96, 94, 94);
+}
+.active ul li a {
+    color: black;
+}
+.header-context {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 8px;
+    font-size: 25px;
+    font-family: cursive;
+    /* font-weight: bold; */
+    text-transform: capitalize;
+    line-height: 1.6rem;
+}
 
 /* Promo CSS */
 .promo-container {
