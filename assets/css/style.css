@@ -515,3 +515,42 @@ body {
     text-transform: capitalize;
     padding-top: 16px;
 }
+
+/* About Us Page */
+.abs-section {
+    position: relative;
+    height: 100vh;
+    background-image: url("../images/hero-bg.jpg");
+}
+.abs-title {
+    font-family: cursive, sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    color: #FF9D2E;
+    /* border: 1px solid white; */
+    padding: 40px 0 25px 0;
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+    padding-right: 20%;
+}
+.abs-image {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 50%;
+    height: 600px;
+}
+.abs-section p {
+    color: white;
+    /* border: 1px solid white; */
+    margin-bottom: 40px;
+    margin-right: 45%;
+    margin-left: 8%;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+}
+.abs-section p span a {
+    text-decoration: none;
+    color: #FF9D2E;
+}
