@@ -438,3 +438,80 @@ body {
         max-width: 100%;
     }  
 }
+
+/* Footer CSS */
+.footer-main {
+    height: 310px;
+	background-color: #24262b;
+}
+.footer-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    line-height: 1.7rem;
+    height: 225px;
+}
+.footer-col {
+    height: 225px;
+    width: 250px;
+}
+.footer-col ul {
+    list-style-type: none;
+}
+.footer-col ul li a {
+    text-transform: capitalize;
+    text-align: center;
+    text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+}
+.footer-col ul li a:hover {
+    color: #e91e63;
+}
+.footer-title {
+    padding-left: 40px;
+    text-transform: capitalize;
+    color: #ffffff;
+    position: relative;
+}
+.footer-title::before{
+	content: '';
+	position: absolute;
+	left: 40px;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 100px;
+}
+.social-links {
+    text-align: center;
+    margin-top: 16px;
+    margin-left: 16px;
+}
+.social-links a i {
+    display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin: 0 5px 5px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.4s ease;
+}
+.social-links a i:hover {
+    color: #e91e63;
+    transform: translateY(-5px);
+}
+.footer-copyright {
+    text-align: center;
+    color: #F9F6F0;
+    height: 60px;
+    font-size: 16px;
+    font-family: Robotot, sans-serif;
+    text-transform: capitalize;
+    padding-top: 16px;
+}
