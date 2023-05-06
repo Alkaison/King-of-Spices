@@ -100,6 +100,50 @@ body {
     text-transform: capitalize;
     line-height: 1.6rem;
 }
+.openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+.closeMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+/* HumBurger Media Query */
+@media screen and (max-width: 800px) {
+    .nav-ul {
+        height: 100vh;
+        position: fixed;
+        top: -100vh;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #000;
+        display: none;
+        transition: top 1s ease;
+    }
+    .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .openMenu {
+        display: block;
+        transition: all 0.8s;
+    }
+    .nav-ul li a:hover {
+        color: #FF9D2E;
+    }
+}
 
 /* Promo CSS */
 .promo-container {

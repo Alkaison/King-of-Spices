@@ -6,6 +6,32 @@ window.addEventListener("scroll", () => {
     header.classList.toggle("active", window.scrollY > 20);
 });
 
+// HumBurger Menu 
+const mainMenu = document.querySelector(".nav-ul");
+const openMenu = document.querySelector(".openMenu");
+const closeMenu = document.querySelector(".closeMenu");
+const menu_items = document.querySelectorAll(".nav-ul li a");
+
+menu_items.forEach(item => {
+    item.addEventListener('click',function(){
+        close();
+    });
+});
+
+openMenu.addEventListener("click", show);
+closeMenu.addEventListener("click", close);
+
+function show()
+{
+    mainMenu.style.display = "flex";
+    mainMenu.style.top = "0";
+}
+
+function close()
+{
+    mainMenu.style.top = "-100vh";
+}
+
 // Reset Form Input Fields 
 function resetForm() {
     form.reset();
