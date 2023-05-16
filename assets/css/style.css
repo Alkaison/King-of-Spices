@@ -589,21 +589,19 @@ html {
 }
 
 /* Footer CSS */
-.footer-main {
-    height: 310px;
+footer {
 	background-color: #24262b;
 }
 .footer-row {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 200px;
-    line-height: 1.7rem;
-    height: 225px;
+    line-height: 1.6rem;
 }
 .footer-col {
     height: 225px;
     width: 250px;
+    padding: 8px;
 }
 .footer-col ul {
     list-style-type: none;
@@ -612,94 +610,68 @@ html {
     text-transform: capitalize;
     text-align: center;
     text-decoration: none;
-	font-weight: 300;
+	font-weight: 400;
+    letter-spacing: 0.8px;
 	color: #bbbbbb;
 }
 .footer-col ul li a:hover {
     color: #e91e63;
 }
 .footer-title {
-    padding-left: 40px;
-    text-transform: capitalize;
-    color: #ffffff;
     position: relative;
+    color: #ffffff;
+    text-transform: capitalize;
+    padding: 4px 0 0;
+    margin-bottom: 12px;
 }
 .footer-title::before{
 	content: '';
 	position: absolute;
-	left: 40px;
-	bottom: -10px;
+	left: 0;
+	bottom: -4px;
 	background-color: #e91e63;
 	height: 2px;
 	box-sizing: border-box;
-	width: 100px;
-}
-.social-links {
-    text-align: center;
-    margin-top: 16px;
-    margin-left: 16px;
+	width: 75px;
 }
 .social-links a i {
     display: inline-block;
+    text-align: center;
 	height: 40px;
 	width: 40px;
 	background-color: rgba(255,255,255,0.2);
-	margin: 0 5px 5px 0;
+    padding-top: 6px;
+    margin: 4px;
 	text-align: center;
-	line-height: 40px;
+	line-height: 1.6rem;
 	border-radius: 50%;
 	color: #ffffff;
 	transition: all 0.4s ease;
 }
 .social-links a i:hover {
     color: #e91e63;
-    transform: translateY(-5px);
+    transform: translateY(-4px);
 }
-.footer-copyright {
+.footer-copyright, .footer-copyright h3 a {
+    text-decoration: none;
     text-align: center;
     color: #F9F6F0;
-    height: 60px;
+    padding: 12px 0;
     font-size: 16px;
-    font-family: Robotot, sans-serif;
+    letter-spacing: 1.1px;
+    font-family: Verdana, Tahoma, sans-serif;
     text-transform: capitalize;
-    padding-top: 16px;
 }
-
-/* About Us Page */
-.abs-section {
-    position: relative;
-    height: 100vh;
-    background-image: url("../images/hero-bg.jpg");
-}
-.abs-title {
-    font-family: cursive, sans-serif;
-    font-size: 48px;
-    font-weight: bold;
-    text-align: center;
-    margin: 0;
-    color: #FF9D2E;
-    /* border: 1px solid white; */
-    padding: 40px 0 25px 0;
-    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
-    padding-right: 20%;
-}
-.abs-image {
-    position: absolute;
-    top: 50px;
-    right: 0;
-    width: 50%;
-    height: 600px;
-}
-.abs-section p {
-    color: white;
-    /* border: 1px solid white; */
-    margin-bottom: 40px;
-    margin-right: 45%;
-    margin-left: 8%;
-    font-family: Roboto, sans-serif;
-    font-size: 20px;
-}
-.abs-section p span a {
-    text-decoration: none;
-    color: #FF9D2E;
+@media screen and (max-width: 700px) {
+    .footer-row {
+        display: block;
+    }
+    .footer-col {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer-copyright, .footer-copyright h3 a {
+        font-size: 14px;
+    }
 }
