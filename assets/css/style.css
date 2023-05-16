@@ -186,6 +186,11 @@ html {
     }
 }
 
+/* Partision Code */
+section {
+    margin-bottom: 40px;
+}
+
 /* Promo CSS */
 .promo-container::-webkit-scrollbar {
     height: 8px;
