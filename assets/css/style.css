@@ -285,60 +285,64 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 32px 32px;
-    margin: 32px 32px;
-    gap: 40px;
-    height: 500px;
-    /* max-height: calc(500px + 80px); */
+    gap: 48px;
+    padding: 16px 32px;
 }
 .about-banner {
     position: relative;
-    margin-left: 120px;
+    width: 424px;
 }
 .about-img1 {
-    width: 100%;
+    max-width: 100%;
     height: auto;
-    max-width: max-content;
 }
 .about-img2 {
+    width: 200px;
+    height: 175px;
     position: absolute;
-    left: 40px;
-    top: -10px;
+    left: 16px;
+    top: 0px;
     animation: scaleUp 1s linear infinite alternate;
 }
 @keyframes scaleUp {
-    0% { transform: scale(1);}
-    100% { transform: scale(1.05); }
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05);
+    }
 }
 .about-content {
-    width: 450px;
-    height: 450px;
-    margin-right: 120px;
+    width: 424px;
+    padding: 8px 12px;
 }
 .h2-about-title {
-    font-size: 40px;
-    margin: 0;
+    font-size: 36px;
+    margin-bottom: 12px;
 }
 .span {
     color: #FF9D2E;
+    white-space: nowrap;
 }
 .section-text {
-    line-height: 1.6rem;
-    padding: 8px;
+    line-height: 1.2rem;
+    padding: 4px;
     font-size: 16px;
     color: #666;
-    padding-right: 20px;
+    margin-bottom: 12px;
 }
 .about-ul {
     list-style-type: none;
-    padding-left: 8px;
+    padding-left: 4px;
+    margin: 12px 0;
 }
 .about-text{
     margin-left: 4px;
-    line-height: 2.2rem;
+    line-height: 1.6rem;
     font-size: 16px;
     color: black;
-    font-weight: 500;
+    font-weight: bold;
+    white-space: nowrap;
 }
 .btn-order-now {
     background: none;
@@ -346,12 +350,12 @@ html {
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     cursor: pointer;
-    margin: 10px;
     color: #F9F6F0;
     transition: color 0.8s;
     position: relative;
     overflow: hidden;
     border: 2px solid #FF9D2E;
+    border-radius: 4px;
 }
 .btn-order-now:hover {
     color: #FF9D2E;
@@ -371,19 +375,42 @@ html {
 .btn-order-now:hover::before {
     height: 0%;
 }
-
-@media screen and (max-width: 876px) {
+@media screen and (max-width: 1200px) {
+    .about-container {
+        gap: 40px;
+    }
+    .about-banner {
+        width: 375px;
+    }
+    .about-img2 {
+        width: 150px;
+        height: 125px;
+    }
+}
+@media screen and (max-width: 800px) {
     .about-container {
         display: block;
-        height: 875px;
-        margin: 8px 8px;
+        padding: 16px;
+    }
+    .about-banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        margin-bottom: 16px;
+    }
+    .about-content {
+        width: auto;
+    }
+}
+@media screen and (max-width: 600px) {
+    .about-container {
+        gap: 32px;
         padding: 8px 16px;
     }
-    .section-text {
-        line-height: 1.4rem;
-    }
-    .about-text {
-        line-height: 1.8rem;
+    .about-img2 {
+        width: 125px;
+        height: 100px;
     }
 }
 
