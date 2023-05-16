@@ -416,32 +416,28 @@ html {
 
 /* Menu Items */
 .menu-header {
-    padding-top: 75px;
-    width: 100%;
-    height: 150px;
+    margin: 32px 0;
+    text-align: center;
 }
 .subhead{
-    text-align: center;
     color: red;
     font-size: 20px;
-    margin: 4px;
-    padding: 0;
 }
 .Heading{
-    text-align: center;
     font-size: 30px;
-    margin: 0;
-    padding: 0;
 }
 .Discription{
-    text-align: center;
+    font-size: 18px;
+    padding: 4px 0;
     color: rgb(78, 78, 78);
 }
-.threeitems{
-    display: flex;
-    justify-content: space-between;
+.allitems {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
     align-items: center;
-    padding: 25px 150px;
+    gap: 28px 48px;
+    margin-bottom: 32px;
 }
 .btn {
     display: block;
@@ -479,33 +475,37 @@ html {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 75%;
-    height: 200px;
+    width: 100%;
 }
 .price-tag {
-    margin: 0;
-    font-size: 18px;
-    font-weight: bold;
     text-align: center;
+    font-size: 18px;
+    padding: 4px 0;
+    color: rgb(78, 78, 78);
 }
 .Items{
-    width: 250px;
-    height: 350px;
+    width: 275px;
+    height: 404px;
 }
 .Dish{
     text-align: center;
-    font-weight: bolder;
+    font-size: 20px;
+    padding: 4px 0;
 }
-@media screen and (max-width: 768px) { 
-    .threeitems {
-        display: block;
+@media screen and (max-width: 1000px) { 
+    .allitems{
+        grid-template-columns: auto auto;
+        gap: 32px 32px;
+    }
+}
+@media screen and (max-width: 620px) {
+    .allitems {
+        grid-template-columns: auto;
+        gap: 24px 24px;
     }
 }
 
 /* Review paga code */
-* {
-    /* border: 1px solid red; */
-}
 .testimonials{
     margin: 0;
     padding: 60px 0;
