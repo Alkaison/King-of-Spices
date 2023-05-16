@@ -503,11 +503,13 @@ html {
 }
 
 /* Review paga code */
+* {
+    /* border: 1px solid red; */
+}
 .testimonials{
     margin: 0;
     padding: 60px 0;
     background: white;
-    /* background: rgb(88, 64, 64); */
     color: red;
     text-align: center;
 }
@@ -517,62 +519,73 @@ html {
     overflow: hidden;
     padding: 0 20px;
 }
-/* use for underline after testimonials */
-.inner-border{
-    width: 300px;
-    height: 5px;
-    background: black;
-    margin: 25px auto;
+.inner-border {
+    width: 264px;
+    height: 4px;
+    border-radius: 8px;
+    background: #edb574;
+    margin: 0 auto 12px;
+}
+.inner h1 {
+    font-size: 45px;
+    color: #ff9d2e;
 }
 .row{
-    /* border: 3px solid aqua; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 .col{
-    /* border: 3px solid aqua; */
     flex: 33.33%;
     max-width: 33.33%;
     box-sizing: border-box;
     padding: 15px;
 }
 .testimonial{
-    /* border: 3px solid aqua; */
     color: black;
-    /* background: gray; */
+    height: 450px;
     background: aquamarine;
-    padding: 30px;
+    padding: 4px 8px;
     border-radius: 15px;
     transition: transform 0.5s;
     box-shadow: 1px 1px 2px black;
+    cursor: pointer;
 }
 .testimonial img{
     width: 120px;
-    height: 100px;
+    height: 120px;
     border-radius: 50%;
+    margin: 8px 0;
 }
 .testimonial:hover {
     background-color: aqua;
-    cursor: pointer;
-    transform: translateY(-10px);
+    transform: translateY(-8px);
     box-shadow: 2px 2px 4px black;
 }
 .star{
     color: orange;
+    margin: 12px 0;
 }
 .name{
     color: rgb(95, 95, 238);
     font-size: 20px;
     font-weight: bold;
     text-transform: capitalize;
-    margin: 20px 0;
+    margin: 8px 0;
+    white-space: nowrap;
 }
-@media screen and (max-width:960px) {
+@media screen and (max-width: 800px) {
+    .inner h1 {
+        font-size: 26px;
+        white-space: nowrap;
+    }
     .col{
-        flex: 100%;
+        flex: 75%;
         max-width: 100%;
-    }  
+    }
+    .testimonial {
+        height: 400px;
+    }
 }
 
 /* Footer CSS */
