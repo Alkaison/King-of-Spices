@@ -13,7 +13,9 @@ const closeMenu = document.querySelector(".closeMenu");
 const menu_items = document.querySelectorAll(".nav-ul li a");
 
 menu_items.forEach((item) => {
-    item.addEventListener("click",close);
+    if (window.innerWidth < 800) {
+        item.addEventListener("click", close);
+    }
 });
 
 openMenu.addEventListener("click", show);

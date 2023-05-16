@@ -1,122 +1,70 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book A Table  | King of Spices - Burgers, Pizza, Indian Veg & Non-veg Cuisine</title>
+    <title>Book A Table | King of Spices - Burgers, Pizza, Indian Veg & Non-veg Cuisine</title>
+    
+    <!-- external css -->
+    <link rel="stylesheet" href="./assets/css/reservation.css">
 
     <!-- favicon -->
     <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/reservation.css">
-
-    <!-- Font Awesome link -->
-    <script src="https://kit.fontawesome.com/5289663089.js" crossorigin="anonymous"></script>
+    <!-- javascript code -->
+    <script src="script.js" defer></script>
 </head>
+
 <body>
-    <div class="burger-info">
-        <img class="bg-img" src="./assets/images/burger-bg.jpg" alt="bg">
-        <img class="burger" src="./assets/images/burger.png" alt="burger">
+
+    <div class="container">
+        <h2>Book A <span>Table</span></h2>
+        <div class="reservation-details">
+            <p>Welcome to our restaurant! To ensure that you have the best dining experience, we highly recommend making a
+                reservation. Our reservation system is quick and easy - simply fill out the form below with your preferred
+                date and time, and we will confirm your booking via email or phone.</p>
+            <h2>Special Requests</h2>
+            <p>If you have any special requests, please let us know in advance. Our team will do their best to
+                accommodate your needs and ensure that you have a comfortable and enjoyable dining experience.</p>
+        </div>
+        <div class="table-container">
+            <form name="reservation-form">
+                <h2>Registration</h2>
+                <div class="content">
+                    <div class="input-box">
+                        <label for="name">Full Name</label>
+                        <input type="text" placeholder="Enter full name" name="name" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="Enter your email" name="email" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" placeholder="Enter phone number" name="phone" pattern="[0-9]{10}"
+                            required>
+                    </div>
+                    <div class="input-box">
+                        <label for="date">Date</label>
+                        <input type="date" placeholder="Enter Date" name="date" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="no-of-persons">Number Of Persons</label>
+                        <input type="number" placeholder="Number Of Persons" min="1" max="10" name="no-of-persons"
+                            required>
+                    </div>
+                    <div class="input-box">
+                        <label for="time">Timing</label>
+                        <input type="time" placeholder="Enter phone number" name="time" required>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button type="submit" value="Reserve Seats" name="Reserve Seats">Reserve Seats</button>
+                </div>
+            </form>
+        </div>
     </div>
-
-    <img class="delevery_man" src="./assets/images/delevery_man.png" alt="man">
-
-    <h2 style="margin-left: 100px;">Book A <span style="color: orange;">Table</span></h2>
-
-    <div style="position: absolute; top: 30%;">
-        <p style="font-size: 18px; margin-top: -6vh; text-align: center; margin-right: 40%; margin-left: 10%; font-size: 20px; font-family: Roboto, sans-serif;">
-            Welcome to our restaurant! To ensure that you have the best dining experience, we highly recommend making a reservation. Our reservation system is quick and easy - simply fill out the form below with your preferred date and time, and we will confirm your booking via email or phone.
-        </p>
-        
-        <h2 style="margin-top: 1px; color: coral; font-size: 2rem; text-align: center; transform: translateX(-200%);">Special Requests</h2>
-        <div>
-            <p id="para2" style="font-family: Roboto, sans-serif; color: #666; text-align: center; padding-bottom: 35px;">
-                If you have any special requests, please let us know in advance. Our team will do their best to accommodate your needs and ensure that you have a comfortable and enjoyable dining experience.
-            </p>
-        </div>
-
-        <div class="table-form-container">
-            <div>
-                <button
-                    style="margin-left: 152vh;
-                        margin-top: -45vh; background-color: white; color: coral; border: none; padding: 10px 20px; border-radius: 5px; font-weight: bold; font-size: 16px;">
-                    Book Table 
-                </button>
-            </div>
-            <div class="table-container">
-                <form action="" method="post" style="height: 375px;">
-                    <h2 style="font-size: 20px; color: blue;">Registration</h2>
-                    <div class="content">
-                        <div class="input-box">
-                            <label for="name">Full Name</label>
-                            <input type="text" placeholder="Enter full name" name="name" required>
-                        </div>
-                        <div class="input-box">
-                            <label for="email">Email</label>
-                            <input type="email" placeholder="Enter your email" name="email" required>
-                        </div>
-                        <div class="input-box">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" placeholder="Enter phone number" name="phone" pattern="[0-9]{10}" required>
-                        </div>
-                        <div class="input-box">
-                            <label for="Date">Date</label>
-                            <input type="date" placeholder="Enter Date" name="phone" required>
-                        </div>
-                        <div class="input-box">
-                            <label for="No-of-table">Number Of Persons</label>
-                            <input type="number" placeholder="Number Of Persons" min="1" max="10" name="phone" required>
-                        </div>
-                        <div class="input-box">
-                            <label for="Time">Timing</label>
-                            <input type="time" placeholder="Enter phone number" name="phone" required>
-                        </div>
-                    </div>
-                    <div class="button-container">
-                        <button type="submit" value="Reserve Seats" name="Reserve Seats">Reserve Seats</button>
-                    </div>
-            </div>
-        </div>
-
-        <!-- Footer -->
-        <footer class="footer-main">
-            <div class="footer-row">
-                <div class="footer-col">
-                    <h4 class="footer-title">company</h4>
-                    <ul>
-                        <li><a href="about.html">about us</a></li>
-                        <li><a href="#">our services</a></li>
-                        <li><a href="#">privacy policy</a></li>
-                        <li><a href="#">trademark</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4 class="footer-title">get help</h4>
-                    <ul>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">delivery</a></li>
-                        <li><a href="#">returns</a></li>
-                        <li><a href="#">order status</a></li>
-                        <li><a href="#">payment options</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4 class="footer-title">follow us</h4>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-copyright">
-                <h3>Copyright ©️ 2023 | King of Spices | All rights reserved.</h3>
-            </div>
-        </footer>
-
-        <script src="./assets/js/script.js" defer></script>
+    
 </body>
 </html>
