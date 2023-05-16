@@ -1,6 +1,6 @@
 # King of Spices
 
-King of Spices is a restaurant website made with HTML, CSS and JavaScript. It has menu, about us page & reservation page. 
+King of Spices is a responsive restaurant website made with HTML, CSS and JavaScript. It has menu, about us page & reservation page.
 
 ## Checkout :tada:
 
@@ -9,10 +9,11 @@ The website is live with the help of GitHub pages. ⭐ Visit the website: https:
 ## Features 
 
 - [x] Good UI & Design
+- [x] Food Menu
+- [x] Testimonial
 - [x] Multiple Pages
-- [ ] Responsive Website
+- [x] Responsive Website
 
-> PR's are welcome to contribute & improve!
 
 ## Credits
 
