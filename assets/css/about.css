@@ -1,0 +1,95 @@
+/* Importing Font Style from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rubik:wght@400;500;600;700&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body {
+    background-color: white;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom Scroll Bar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background-color: #F9F6F0;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #FF9D2E;
+    border-radius: 4rem;
+}
+
+/* About Us Page */
+.abs-section {
+    position: relative;
+    height: 100vh;
+    background-image: url("../images/hero-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.abs-title {
+    font-family: cursive, sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    color: #FF9D2E;
+    padding: 40px 0;
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+    padding-right: 20%;
+    margin-bottom: 16px;
+}
+.abs-image img {
+    position: absolute;
+    top: 12%;
+    right: 0;
+    width: 40%;
+}
+.abs-section p {
+    color: #F9F6F0;
+    margin-right: 45%;
+    margin-left: 4%;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    padding: 6px;
+    margin-bottom: 32px;
+}
+.abs-section p span a {
+    text-decoration: none;
+    color: #FF9D2E;
+}
+@media screen and (max-width: 1000px) {
+    .abs-section {
+        height: auto;
+    }
+    .abs-title {
+        text-align: center;
+        padding: 8px 12px;
+        font-size: 40px;
+    }
+    .abs-image img{
+        position: relative;
+        width: 100%;
+        margin: auto;
+        margin: 16px auto;
+    }
+    .abs-image, .abs-title, .abs-section p {
+        width: 64%;
+        margin: auto;
+    }
+    .abs-section p:not(:last-child) {
+        margin-bottom: 28px;
+    }
+    .abs-section p:last-child {
+        padding-bottom: 28px;
+    }
+}
