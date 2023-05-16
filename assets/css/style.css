@@ -89,7 +89,7 @@ html {
     box-shadow: 2px 0px 2px rgb(96, 94, 94);
 }
 .active ul li a {
-    color: black;
+    color: #24262b;
 }
 .header-context {
     position: absolute;
@@ -134,7 +134,7 @@ html {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: #000;
+        background-color: #666;
         display: none;
         transition: top 1s ease;
     }
@@ -147,6 +147,9 @@ html {
     .openMenu {
         display: block;
         transition: all 0.8s;
+    }
+    .nav-ul li a {
+        color: white;
     }
     .nav-ul li a:hover {
         color: #FF9D2E;
