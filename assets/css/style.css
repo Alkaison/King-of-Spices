@@ -187,60 +187,66 @@ html {
 }
 
 /* Promo CSS */
+.promo-container::-webkit-scrollbar {
+    height: 8px;
+}
+.promo-container::-webkit-scrollbar-track {
+    background-color: #F9F6F0;
+}
+.promo-container::-webkit-scrollbar-thumb {
+    background-color: #FF9D2E;
+    border-radius: 4rem;
+}
 .promo-container {
     display: grid;
-    gap: 25px;
+    gap: 48px;
     grid-auto-flow: column;
-    grid-auto-columns: 21%;
+    grid-auto-columns: 24%;
     overflow-x: auto;
     overscroll-behavior-inline: contain;
     text-align: center;
     margin: 64px 128px;
-    max-height: calc(500px + 80px);
-}
-.promo-container::-webkit-scrollbar {
-    width: 0;
-    height: 0;
-}
-.promo-ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-    gap: 10px;
-    text-align: center;
+    padding-bottom: 8px;
 }
 .promo-card {
-    width: 275px;
-    height: 500px;
-    padding-top: 8px;
+    width: fit-content;
+    height: 450px;
+    padding: 16px;
     color: black;
     position: relative;
     background: none;
     transition: color 0.4s;
+    border: 1px solid #666;
 }
 /* Responsive CSS */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
     .promo-container {
-        grid-auto-columns: 30%;
-        margin: 32px;
+        grid-auto-columns: 29%;
+        margin: 32px 64px;
     }
     .promo-card {
-        width: 100%;
-        height: auto;
-        padding-top: 25%;
+        width: fit-content;
+        height: 450px;
+        padding-top: 16px;
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 800px) {
     .promo-container {
-        grid-auto-columns: 45%;
+        grid-auto-columns: 36%;
         margin: 16px;
     }
 }
-.promo-card:hover > * , .promo-card:hover .promo-svg path {
+@media screen and (max-width: 600px) {
+    .promo-container {
+        grid-auto-columns: 70%;
+        margin: 8px;
+    }
+}
+.promo-card:hover > * , .promo-card:hover svg path {
     color: white;
     fill: white;
+    transition: color 0.6s;
 }
 .promo-card::before {
     content: "";
@@ -251,21 +257,24 @@ html {
     height: 25%;
     background: #FF9D2E;
     z-index: -1;
-    transition: 0.4s;
+    transition: all 0.8s;
     border-radius: 0 0;
 }
 .promo-card:hover::before {
     height: 100%;
 }
-.promo-svg {
+.promo-card svg {
     margin-top: 8px;
+    transition: color 0.6s;
 }
 .h3-card-title{
     font-size: 25px;
+    transition: color 0.6s;
 }
 .card-text {
     padding: 8px;
     color: #666;
+    transition: color 0.6s;
 }
 .promo-img {
     margin-top: 10px;
