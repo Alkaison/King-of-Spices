@@ -5,21 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book A Table | King of Spices - Burgers, Pizza, Indian Veg & Non-veg Cuisine</title>
-    
+
     <!-- external css -->
-    <link rel="stylesheet" href="./assets/css/reservation.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/reservation.css">
 
     <!-- favicon -->
     <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
 
+    <!-- Font Awesome link -->
+    <script src="https://kit.fontawesome.com/5289663089.js" crossorigin="anonymous"></script>
+
     <!-- javascript code -->
-    <script src="script.js" defer></script>
+    <script src="assets/js/script.js" defer></script>
+    <script src="assets/js/reservation.js" defer></script>
 </head>
 
 <body>
-    <!-- Header Section -->
-    <section class="header-img">
+    <div class="container">
+        <!-- Header Section -->
         <header class="header-main">
             <nav class="nav-main">
                 <h1 class="main-title"><a href="#">King of Spices</a></h1>
@@ -28,17 +32,19 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="index.html#menu">Menu</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="#">Reservation</a></li>
                     <div class="closeMenu"><i class="fa-solid fa-xmark"></i></div>
                 </ul>
             </nav>
         </header>
 
-    <div class="container">
         <h2>Book A <span>Table</span></h2>
         <div class="reservation-details">
-            <p>Welcome to our restaurant! To ensure that you have the best dining experience, we highly recommend making a
-                reservation. Our reservation system is quick and easy - simply fill out the form below with your preferred
+            <p>Welcome to our restaurant! To ensure that you have the best dining experience, we highly recommend
+                making
+                a
+                reservation. Our reservation system is quick and easy - simply fill out the form below with your
+                preferred
                 date and time, and we will confirm your booking via email or phone.</p>
             <h2>Special Requests</h2>
             <p>If you have any special requests, please let us know in advance. Our team will do their best to
@@ -58,8 +64,7 @@
                     </div>
                     <div class="input-box">
                         <label for="phone">Phone Number</label>
-                        <input type="tel" placeholder="Enter phone number" name="phone" pattern="[0-9]{10}"
-                            required>
+                        <input type="tel" placeholder="Enter phone number" name="phone" pattern="[0-9]{10}" required>
                     </div>
                     <div class="input-box">
                         <label for="date">Date</label>
@@ -81,6 +86,5 @@
             </form>
         </div>
     </div>
-    
 </body>
 </html>
