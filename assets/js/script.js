@@ -46,3 +46,7 @@ form.addEventListener('submit', (event) => {
         alert("Please fill out all required fields!");
     }
 });
+
+function show_alert(){
+    alert("No Feature Added!!!");
+}

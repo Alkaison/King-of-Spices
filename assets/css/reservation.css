@@ -8,6 +8,15 @@ body {
     background-color: #666;
     color: white;
 }
+.header-img {
+    margin-top: -35px;
+    height: 100vh;
+    background-image: url("../images/main_bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
 
 /* Custom Scroll Bar */
 ::-webkit-scrollbar {
@@ -23,11 +32,16 @@ body {
 
 /* About Us Page */
 .container {
-    position: relative;
+    /* position: relative; */
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 20%;
+
 }
 .container h2 {
     color: red;
-    padding: 8px;
+    padding: 5px;
+    /* margin-top: 100px; */
 }
 .container p {
     padding: 6px;
@@ -45,7 +59,7 @@ h2 span {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
-    padding: 2em;
+    padding: 1em;
 }
 .table-container {
     max-width: 500px;
@@ -53,7 +67,7 @@ h2 span {
     border-radius: 8px;
     background: rgb(176, 207, 134);
     padding: 1em;
-    margin-top: 2em;
+    /* margin-top: 2em; */
     margin-bottom: 2em;
     box-shadow: 1px 1px 4px black;
 }

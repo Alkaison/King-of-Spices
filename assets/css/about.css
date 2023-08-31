@@ -43,10 +43,10 @@ html {
     text-align: center;
     margin: 0;
     color: #FF9D2E;
-    padding: 40px 0;
+    padding: 80px 0;
     text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
     padding-right: 20%;
-    margin-bottom: 16px;
+    margin-bottom: -10px;
 }
 .abs-image img {
     position: absolute;
