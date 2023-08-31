@@ -28,6 +28,9 @@ html {
 }
 
 /* About Us Page */
+section.abs-section {
+    margin: 0;
+}
 .abs-section {
     position: relative;
     height: 100vh;
@@ -70,6 +73,11 @@ html {
 @media screen and (max-width: 1000px) {
     .abs-section {
         height: auto;
+        padding: 80px 16px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
     .abs-title {
         text-align: center;
@@ -79,17 +87,20 @@ html {
     .abs-image img{
         position: relative;
         width: 100%;
-        margin: auto;
-        margin: 16px auto;
     }
-    .abs-image, .abs-title, .abs-section p {
+    .abs-image, .abs-title {
         width: 64%;
-        margin: auto;
+        padding: 16px;
+    }
+    .abs-section p {
+        width: 100%;
+        margin: 0;
+        padding: 0;
     }
     .abs-section p:not(:last-child) {
-        margin-bottom: 28px;
+        margin-bottom: 24px;
     }
     .abs-section p:last-child {
-        padding-bottom: 28px;
+        padding-bottom: 40px;
     }
 }
