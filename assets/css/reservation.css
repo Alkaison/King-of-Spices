@@ -31,17 +31,17 @@ body {
 }
 
 /* About Us Page */
+section.header-img {
+    height: auto;
+    margin: 0;
+    background-image: none;
+}
 .container {
-    /* position: relative; */
-    position: absolute;
-    margin-top: 5%;
-    margin-left: 20%;
-
+    padding: 64px 0 0 0;
 }
 .container h2 {
     color: red;
     padding: 5px;
-    /* margin-top: 100px; */
 }
 .container p {
     padding: 6px;
@@ -60,6 +60,10 @@ h2 span {
     margin: 0 auto;
     text-align: center;
     padding: 1em;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: .7px;
+    line-height: 1.7rem;
 }
 .table-container {
     max-width: 500px;
@@ -67,7 +71,6 @@ h2 span {
     border-radius: 8px;
     background: rgb(176, 207, 134);
     padding: 1em;
-    /* margin-top: 2em; */
     margin-bottom: 2em;
     box-shadow: 1px 1px 4px black;
 }
