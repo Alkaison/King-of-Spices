@@ -206,15 +206,19 @@ section {
     border-radius: 4rem;
 }
 .promo-container {
+    width: 1200px;
     display: grid;
-    gap: 48px;
+    /* gap: 48px; */
+    gap: 40px;
     grid-auto-flow: column;
-    grid-auto-columns: 24%;
+    grid-auto-columns: 31%;
+    /* grid-auto-columns: 24%; */
     overflow-x: auto;
     overscroll-behavior-inline: contain;
     text-align: center;
-    margin: 64px 128px;
+    margin: 64px 190px;
     padding-bottom: 8px;
+    /* background-color: #e91e63; */
 }
 .promo-card {
     width: fit-content;
@@ -225,6 +229,7 @@ section {
     background: none;
     transition: color 0.4s;
     border: 1px solid #666;
+    border-radius: 5px;
 }
 /* Responsive CSS */
 @media screen and (max-width: 1200px) {
@@ -265,7 +270,7 @@ section {
     height: 25%;
     background: #FF9D2E;
     z-index: -1;
-    transition: all 0.8s;
+    transition: all 0.5s;
     border-radius: 0 0;
 }
 .promo-card:hover::before {
