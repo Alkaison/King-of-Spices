@@ -5,17 +5,13 @@
     font-family: Roboto, sans-serif;
 }
 body {
-    background-color: #666;
     color: white;
-}
-.header-img {
-    margin-top: -35px;
-    height: 100vh;
     background-image: url("../images/main_bg.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+    object-fit: cover;
 }
 
 /* Custom Scroll Bar */
@@ -31,11 +27,6 @@ body {
 }
 
 /* About Us Page */
-section.header-img {
-    height: auto;
-    margin: 0;
-    background-image: none;
-}
 .container {
     padding: 64px 0 0 0;
 }
@@ -60,7 +51,7 @@ h2 span {
     margin: 0 auto;
     text-align: center;
     padding: 1em;
-    font-size: 16px;
+    font-size: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     letter-spacing: .7px;
     line-height: 1.7rem;
@@ -69,7 +60,7 @@ h2 span {
     max-width: 500px;
     margin: 0 auto;
     border-radius: 8px;
-    background: rgb(176, 207, 134);
+    background-image: linear-gradient(to right, #1dc794, #5f49c2);
     padding: 1em;
     margin-bottom: 2em;
     box-shadow: 1px 1px 4px black;

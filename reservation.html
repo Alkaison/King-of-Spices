@@ -22,8 +22,8 @@
 </head>
 
 <body>
-    <div class="container">
-        <!-- Header Section -->
+    <!-- Header Section -->
+    <section class="header-img">
         <header class="header-main">
             <nav class="nav-main">
                 <h1 class="main-title"><a href="#">King of Spices</a></h1>
@@ -32,59 +32,75 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="index.html#menu">Menu</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="#">Reservation</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
                     <div class="closeMenu"><i class="fa-solid fa-xmark"></i></div>
                 </ul>
             </nav>
         </header>
+        <div class="container">
+            <!-- Header Section -->
+            <!-- <header class="header-main">
+                <nav class="nav-main">
+                    <h1 class="main-title"><a href="#">King of Spices</a></h1>
+                    <div class="openMenu"><i class="fa-solid fa-bars" style="color: #ff9d2e;"></i></div>
+                    <ul class="nav-ul">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#menu">Menu</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#">Reservation</a></li>
+                        <div class="closeMenu"><i class="fa-solid fa-xmark"></i></div>
+                    </ul>
+                </nav>
+            </header> -->
 
-        <h2>Book A <span>Table</span></h2>
-        <div class="reservation-details">
-            <p>Welcome to our restaurant! To ensure that you have the best dining experience, we highly recommend
-                making
-                a
-                reservation. Our reservation system is quick and easy - simply fill out the form below with your
-                preferred
-                date and time, and we will confirm your booking via email or phone.</p>
-            <h2>Special Requests</h2>
-            <p>If you have any special requests, please let us know in advance. Our team will do their best to
-                accommodate your needs and ensure that you have a comfortable and enjoyable dining experience.</p>
+            <h2>Book A <span>Table</span></h2>
+            <div class="reservation-details">
+                <p>Welcome to our restaurant! To ensure that you have the best dining experience, we highly recommend
+                    making
+                    a
+                    reservation. Our reservation system is quick and easy - simply fill out the form below with your
+                    preferred
+                    date and time, and we will confirm your booking via email or phone.</p>
+                <h2>Special Requests</h2>
+                <p>If you have any special requests, please let us know in advance. Our team will do their best to
+                    accommodate your needs and ensure that you have a comfortable and enjoyable dining experience.</p>
+            </div>
+            <div class="table-container">
+                <form name="reservation-form">
+                    <h2>Registration</h2>
+                    <div class="content">
+                        <div class="input-box">
+                            <label for="name">Full Name</label>
+                            <input type="text" placeholder="Enter full name" name="name" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="email">Email</label>
+                            <input type="email" placeholder="Enter your email" name="email" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" placeholder="Enter phone number" name="phone" pattern="[0-9]{10}" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="date">Date</label>
+                            <input type="date" placeholder="Enter Date" name="date" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="no-of-persons">Number Of Persons</label>
+                            <input type="number" placeholder="Number Of Persons" min="1" max="10" name="no-of-persons"
+                                required>
+                        </div>
+                        <div class="input-box">
+                            <label for="time">Timing</label>
+                            <input type="time" placeholder="Enter phone number" name="time" required>
+                        </div>
+                    </div>
+                    <div class="button-container">
+                        <button type="submit" value="Reserve Seats" name="Reserve Seats">Reserve Seats</button>
+                    </div>
+                </form>
+            </div>
         </div>
-        <div class="table-container">
-            <form name="reservation-form">
-                <h2>Registration</h2>
-                <div class="content">
-                    <div class="input-box">
-                        <label for="name">Full Name</label>
-                        <input type="text" placeholder="Enter full name" name="name" required>
-                    </div>
-                    <div class="input-box">
-                        <label for="email">Email</label>
-                        <input type="email" placeholder="Enter your email" name="email" required>
-                    </div>
-                    <div class="input-box">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" placeholder="Enter phone number" name="phone" pattern="[0-9]{10}" required>
-                    </div>
-                    <div class="input-box">
-                        <label for="date">Date</label>
-                        <input type="date" placeholder="Enter Date" name="date" required>
-                    </div>
-                    <div class="input-box">
-                        <label for="no-of-persons">Number Of Persons</label>
-                        <input type="number" placeholder="Number Of Persons" min="1" max="10" name="no-of-persons"
-                            required>
-                    </div>
-                    <div class="input-box">
-                        <label for="time">Timing</label>
-                        <input type="time" placeholder="Enter phone number" name="time" required>
-                    </div>
-                </div>
-                <div class="button-container">
-                    <button type="submit" value="Reserve Seats" name="Reserve Seats">Reserve Seats</button>
-                </div>
-            </form>
-        </div>
-    </div>
+    </section>
 </body>
 </html>
