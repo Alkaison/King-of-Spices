@@ -207,14 +207,13 @@ section {
 }
 .promo-container {
     display: grid;
-    width: 1200px;
     gap: 48px;
     grid-auto-flow: column;
-    grid-auto-columns: 30%;
+    grid-auto-columns: 24%;
     overflow-x: auto;
     overscroll-behavior-inline: contain;
     text-align: center;
-    margin: 64px 190px;
+    margin: 64px 128px;
     padding-bottom: 8px;
 }
 .promo-card {
@@ -265,7 +264,6 @@ section {
     bottom: 0;
     width: 100%;
     height: 25%;
-    /* background: #FF9D2E; */
     background-image: linear-gradient(to top, #FF9D2E, #f1632b);
     z-index: -1;
     transition: all .4s;
