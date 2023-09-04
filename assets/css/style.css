@@ -195,8 +195,13 @@ section {
 }
 
 /* Promo CSS */
+section#promo-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .promo-container::-webkit-scrollbar {
-    height: 8px;
+    height: 12px;
 }
 .promo-container::-webkit-scrollbar-track {
     background-color: #F9F6F0;
@@ -206,19 +211,20 @@ section {
     border-radius: 4rem;
 }
 .promo-container {
-    display: grid;
-    gap: 48px;
-    grid-auto-flow: column;
-    grid-auto-columns: 24%;
-    overflow-x: auto;
-    overscroll-behavior-inline: contain;
+    padding: 64px 2px 16px;
+    max-width: 1050px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
     text-align: center;
-    margin: 64px 128px;
-    padding-bottom: 8px;
+    overflow-x: auto;
+    margin: 0 10%;
 }
 .promo-card {
-    width: fit-content;
+    width: 320px;
     height: 450px;
+    min-width: 320px;
+    min-height: 450px;
     padding: 16px;
     color: black;
     position: relative;
@@ -228,28 +234,15 @@ section {
     border-radius: 6px;
 }
 /* Responsive CSS */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1290px) {
     .promo-container {
-        grid-auto-columns: 29%;
-        margin: 32px 64px;
-    }
-    .promo-card {
-        width: fit-content;
-        height: 450px;
-        padding-top: 16px;
+        max-width: 680px;
+        margin: 0;
     }
 }
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
     .promo-container {
-        grid-auto-columns: 36%;
-        margin: 16px;
-    }
-}
-@media screen and (max-width: 600px) {
-    .promo-container {
-        grid-auto-columns: 70%;
-        margin: 8px;
+        max-width: 350px;
     }
 }
 .promo-card:hover > * , .promo-card:hover svg path {
