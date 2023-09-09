@@ -44,6 +44,7 @@ html {
     z-index: 10000;
 }
 .nav-main {
+    -webkit-backdrop-filter: blur(2px);
     backdrop-filter: blur(2px);
     position: relative;
     display: flex;
